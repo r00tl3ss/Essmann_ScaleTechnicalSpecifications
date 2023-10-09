@@ -1,0 +1,319 @@
+These are the technical specifications for a scale. Please create a detailed JSON file
+                                    to sort, label and group them. Don't simplify it: Flow rate measurement
+Flow rate is determined from the weight variation that occurs during a given interval. Many
+operators time this interval by using a stopwatch. Besides being troublesome and error-prone,
+this method does not allow precise recording of flow rates that vary from moment to moment
+because the interval used to divide the weight variation (calculation time) is too long.
+Alternatively, a PC can be connected to the balance to take the weighing data and perform the
+calculation. This method enables measurement to be more responsive to flow rate changes by
+shortening the calculation time. However, due to the syncing problems that inevitably occur
+between the internal clocks of the balance and the PC, the timing at which the balance receives
+the command from the PC to send the weight value and its display refresh cycle gradually go out
+of alignment. In consequence, the PC intermittently produces irregular values even when the
+actual flow rate is constant.
+1 sec 2 sec 3 sec 4 sec 5 sec 6 sec
+Balance
+0 1 2 3 4 5 1 2 3 4 5 1 2 3 4 5 1 2 3 4 5 1 2 3 4 5 1 2 3 4 5 6
+1 sec 2 sec 3 sec 4 sec 5 sec 6 sec
+PC
+Time disparity of two different internal clocks (when the balance display refresh rate
+is 5 times/sec, the calculation time is 1 sec, and the balance's internal clock goes slightly ahead of the PC's)
+FRD
+Flow rate display (FRD) for calculating flow rate with the balance itself
+FR-Cal
+A&D Apollo can calculate and display/output the mass flow rate (the unit of measure can be selected from g/s, g/m or
+g/h), or the volume flow rate (mL/s, mL/m or mL/h) by entering the density of the material—up to 10 densities can be
+saved to the device. Both the display refresh rate and calculation time (set either manually between 1 second and 1
+hour or automatically according to the selected level of responsiveness to weight/flow rate variation♦) are regulated by
+the same internal clock of the balance, allowing measurements to be precisely performed without the time disparity
+problem described above. ♦ Patent pending
+0.45 g/s
+Conventional method
+0.4 g/s
+FR-Cal
+0.35 g/s
+Flow rate measurement using FR-Cal as opposed to the conventional method
+FR-Compare
+The balance indicates whether the flow rate is maintained within the designated limits (either 3 levels or 5 levels). The
+results can be output using the optional GXA-04 interface.
+WinCT-FRD (freeware)
+This software enables a PC to simultaneously display the weight and flow rate values transmitted from the balance on
+a two axis graph so that you can see their changes in real time. The graph can be printed out using a printer or saved
+as an image file, whereas the recorded data can be saved in CSV or TXT format.
+Tare memory
+The tare value can be saved in non-volatile memory. When this function is activated, the
+power-on re-zero/tare is turned off. Therefore, even if the power supply is cut off while
+performing, for example, flow rate measurement, the weight value displayed before the power
+off will be displayed as the balance is turned on again.
+5Data management, documentation and compliance
+User access control (UAC) and key lock to prevent misusage
+The balance can be password-protected in two ways: The first way is to limit the use to
+authorized individuals (up to 11 including one administrator—the administrator can perform all
+operations while other users are limited to measurements and calibration*6 only) by setting a
+password for each user. The second way is to set a password just for the administrator and
+anyone else can use the balance without entering a password but for measurements and
+calibration*6 only.
+Moreover, upon receiving a command to disable its keys, the balance becomes operable only by
+sending commands from an external device such as a PC.
+*6 The administrator can inhibit calibration also so that others can perform measurements only.
+Automatic minimum weight calculation and implementation
+You can enter the minimum weight into the balance by either direct key input, using the result of
+QuickMin-S described earlier, or having the balance calculate the minimum weight from 10
+repeated measurements of an actual, external weight (as with QuickMin-S, the tolerance can be
+set to either 0.1% pursuant to USP Chapter 41 or 1%) . The stored value can always be called up to
+see/change or output together with timestamp. When QuickMin-S or an external weight was
+used, the calculation data is also output.
+Min-S Alert
+To ensure that the measured sample amount meets the
+minimum weight requirement, the balance can display an
+alert until the sample amount reaches the value entered as the
+minimum weight.*7
+*7 When g is selected as the unit of measure only
+Blinking minimum weight alert
+Universal Flexi Coms (UFC)
+This function enables you to customize printout content and layout by editing and sending
+commands (UFC setting commands) to the balance. Following the commands, the balance creates
+data to be output to either a printer capable of dump printing such as the AD-8127 compact
+printer or a commercially-available label printer*8 for barcode printing.
+*8 A label printer that supports ZPL/ZPL II
+WinCT-UFC (freeware)
+With this software, you can easily edit UFC setting commands on a PC and send them to a balance/scale that has a
+UFC function, such as A&D Apollo. All that is required is to select data (e.g. weighing result, date, time, ID number,
+etc.), enter text and adjust the layout while checking the preview screen, which the software automatically converts
+to UFC setting commands. For label printing, users can choose one of three kinds of barcodes; namely, QR code,
+Data Matrix code and Code 39.
+Gross/Net/Tare output
+On receiving a command or with key operation, the balance can also output the gross, net, and tare values.
+Statistical calculation function (SCF)
+A&D Apollo can display/output statistical calculation data including the number of data, sum,
+maximum, minimum, range (maximum-minimum), average, standard deviation, coefficient of
+variation and relative error to facilitate the analysis of measurements.
+6GLP/GMP/GCP/ISO compliant output
+For documentation requirements, the balance manufacturer, model, serial number, ID number,
+date + time,*9 space for signature for calibration report, calibration test report, and title & end
+blocks for a series of weighing results can be output.
+*9 When the AD-8127 compact printer is used, it is possible to use its clock & calendar function instead of the balance's to print date +
+time. This allows you to prevent falsification of the timestamp using the password lock function on the printer side as you prefer.
+Data memory
+A&D Apollo has a capacity to store up to 200 weighing results + 50 calibration results (all with
+timestamp), and 50 unit masses to be used in counting mode for cases when no external memory
+device is available. The stored weighing results or calibration results can be output to a printer
+or PC in one batch.
+Other advanced features
+RS-232C and USB interfaces as standard Security slot
+For the USB interface, you can toggle between the Quick An off-the-shelf (such as Kensington)
+USB mode (plug-and-play with weighing data output to anti-theft lock can be used to prevent
+a PC only) and the Virtual COM mode (for bi-directional the balance from being lost.
+communication*10) with internal settings. A USB cable
+is provided as standard.
+*10 A special driver downloaded from the A&D website needs to be
+installed on the PC (except for those with Windows 10).
+Reverse backlit LCD display
+The contrast of black and white provides
+excellent visibility even in poorly-lit areas
+and also prevents eye fatigue.
+Bright Bubble Fly-Thumbwheel
+The large, front-mounted spirit level is easy to see with The leveling feet can be adjusted up or
+LED illumination, which blinks for 5 seconds after the down smoothly using large thumbwheels
+display is turned on to call for attention to make sure the set in higher position.
+balance is level.
+7Options*11
+||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+GXA-03 2nd RS-232C interface
+GXA-04 Comparator relay output/buzzer/external key input interface
+Enables signaling check weighing results (3 or 5 levels) by buzzer and/or external comparator (traffic) lights.
+It also has two jacks for separately-sold foot switches.
+GXA-06 Analog output interface (factory-installed/dealer option)
+0-1 V, or 0.2-1 V for conversion to 4-20 mA.
+FXi-08 Ethernet interface
+GXA-09 Built-in rechargeable battery (factory-installed/dealer option)
+10 hours of charging for 14 hours of operation (the remaining battery level will be indicated on the display).
+The balance can be used while recharging the battery.
+GXA-10*12 Large glass breeze break
+GXA-12 Animal weighing pan (0.001/0.01/0.1 g readability models of 320 g capacity or higher)
+Use together with the animal weighing (average & hold) mode.
+GXA-13 Density determination kit for the 0.001 g readability models
+GXA-14 Density determination kit for the 0.0001 g readability models
+GXA-17*13 Large glass breeze break with built-in fanless ionizer and
+external IR switch
+GXA-23-PRINT External key input interface + the AX-SW137-PRINT
+foot switch
+GXA-23-REZERO External key input interface + the AX-SW137-REZERO
+foot switch
+GXA-23-PLUG External key input interface + the AX-T-314A-S plug
+GXA-24 USB host interface (factory-installed/dealer option)
+Accepts an off-the-shelf USB flash drive to save weighing results in CSV format.
+Density determination kits
+GXA-25 Fanless ionizer of Quick Ion technology Make weighing the sample in air and
+Power is supplied from the balance. Activated for a set duration with an in water quicker, easier and more
+precise. A&D Apollo can then perform
+embedded IR sensor. a density calculation automatically.
+GXA-26 External IR switch
+For touchless operation of print or re-zero (tare).
+*11 Only one of GXA-03, GXA-04, GXA-06, FXi-08, GXA-09, GXA-17, GXA-23-PRINT/REZERO/PLUG, GXA-24, GXA-25 or
+GXA-26 can be installed (meaning that GXA-03, GXA-04, GXA-06, FXi-08, GXA-09, GXA-23-PRINT/REZERO/PLUG, or
+GXA-24 cannot be installed in the GX-AE series without first removing its interface for the built-in fanless ionizer.).
+*12 Provided as standard for the 0.0001 readability models of the GX-A/GF-A series.
+*13 Provided as standard for the GX-AE series.
+Accessories
+|||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+AD-1641 Air flow logger
+AD-1682 Rechargeable battery unit
+AD-1683 Static eliminator*14
+AD-1684A Electrostatic field meter
+AD-1687 Weighing environment logger
+AD-1688 Weighing data logger
+AD-1689 Tweezers for calibration weight
+AD-1691 Weighing environment analyzer AD-8127
+AD-8127 Compact printer
+AD-8526 Serial/Ethernet converter
+AD-8920A Remote display
+AD-8922A Remote controller
+AX-BM-NEEDLESET Electrode unit for ionizer (4 pcs)
+AX-GXA-31 Main unit cover (5 pcs)
+AX-SW137-PRINT Foot switch for print
+AX-SW137-PRINT AX-SW137-REZERO
+AX-SW137-REZERO Foot switch for re-zero
+AX-USB-9P Serial/USB converter with cable
+*14 Power needs to be supplied from an AC adapter. Recommended when A&D Apollo has another option than
+GXA-17 or GXA-25 installed.
+8AD-8529PC/PR-W Bluetooth® converters
+Enable wireless communication between a balance/scale and a PC/printer using Bluetooth® technology*15
+(line-of-sight distance approx. 10 m when there is no radio wave interference).
+AD-8529PC-W for communication with a PC
+USB connector
+Approx. 10 m
+D-Sub connector
+AD-8529PR-W for communication with a printer
+*15 Please contact your local A&D representative to find out whether the AD-8529PC/PR-W
+is certified for compliance with Bluetooth® communication laws in your country. D-Sub connector
+Specifications
+GX-124AE GX-224AE GX-324AE
+GX-AE/GX-A/GF-A (0.0001g) GX-124A GX-224A GX-324A
+Models GF-124A GF-224A GF-324A
+Capacity 122 g 220 g 320 g
+Readability 0.0001 g
+0.0002 g (300 g)
+Repeatability (standard deviation) 0.0001 g
+0.0001 g (200 g)
+Minimum weight*i (typical) 120 mg
+Linearity ±0.0002 g ±0.0003 g
+Stabilization time Approx. 2 sec (200 g) Approx. 2 sec (300 g)
+Approx. 1.5 sec (100 g)
+(when set to FAST under a good environment) Approx. 1.5 sec (100 g) Approx. 1.5 sec (100 g)
+Sensitivity drift ±2 ppm/°C (10 to 30 °C/50 to 86 °F, when automatic self calibration is OFF)
+Operating environment 5 to 40 °C (41 to 104 °F), 85%RH or less (no condensation)
+Display refresh rate 5 times/sec, 10 times/sec or 20 times/sec
+mg (milligram), g (gram), oz (ounce), ozt (troy ounce), ct (metric carat), mom (momme), dwt (pennyweight), gr (grain),
+Units of measure*ii
+pcs (counting mode), % (percent mode), SG (density mode), and a user-programmable unit
+Minimum unit mass 0.0001 g
+Counting mode
+Number of samples 5, 10, 25, 50 or 100 pieces
+Minimum 100% reference mass 0.0100 g
+Percent mode
+% readability 0.01%, 0.1% or 1% (depends on the reference mass stored)
+Communication interface RS-232C and USB
+50 g
+50 g
+50 g 100 g
+Applicable calibration weight value 100 g
+100 g 200 g
+200 g
+300 g
+Weighing pan size Ø90 mm
+External dimensions 259 (W) × 358 (D) × 332 (H) mm (including the large glass breeze break)
+Net weight Approx. 7 kg
+Power supply / consumption AC adapter / approx. 30 VA
+GX-A/GF-A (0.001g) GX-203A GX-303A GX-403A GX-603A GX-1003A GX-1603A
+Models GF-123A GF-203A GF-303A GF-403A GF-603A GF-1003A GF-1603A
+Capacity 122 g 220 g 320 g 420 g 620 g 1100 g 1620 g
+Readability 0.001 g
+0.002 g (1600 g)
+Repeatability (standard deviation) 0.001 g 0.001 g (1000 g)
+Minimum weight*i (typical) 1.4 g
+Linearity ±0.002 g ±0.003 g
+Stabilization time Approx. 1 sec Approx. 1.5 sec
+(when set to FAST under a good environment) Approx. 0.8 sec (5 g) Approx. 0.8 sec (5 g)
+Sensitivity drift ±2 ppm/°C (10 to 30 °C/50 to 86 °F, when automatic self calibration is OFF)
+Accuracy immediately after internal
+calibration (for the GX-A series)*iii ±0.010 g ±0.010 g (1000 g)
+Operating environment 5 to 40 °C (41 to 104 °F), 85%RH or less (no condensation)
+Display refresh rate 5 times/sec, 10 times/sec or 20 times/sec
+g (gram), oz (ounce), lb (pound), lb-oz (pound-ounce), ozt (troy ounce), ct (metric carat), mom (momme), dwt (pennyweight),
+Units of measure*ii
+gr (grain), pcs (counting mode), % (percent mode), SG (density mode), and a user-programmable unit
+Minimum unit mass 0.001 g
+Counting mode
+Number of samples 5, 10, 25, 50 or 100 pieces
+Minimum 100% reference mass 0.100 g
+Percent mode
+% readability 0.01%, 0.1% or 1% (depends on the reference mass stored)
+Communication interface RS-232C and USB
+50 g 50 g 50 g 50 g 50 g
+50 g
+50 g 100 g 100 g 100 g 100 g 100 g
+Applicable calibration weight value 100 g
+100 g 200 g (100 g interval) (100 g interval) (100 g interval) (100 g interval)
+200 g
+300 g 400 g 600 g 1000 g 1600 g
+Weighing pan size 128 × 128 mm
+External dimensions 212 (W) × 317 (D) × 171 (H) mm (including the small plastic breeze break)
+Net weight Approx. 5 kg
+Power supply / consumption AC adapter / approx. 30 VA
+9GX-A/GF-A (0.01/0.1g) GX-2002A GX-3002A GX-4002A GX-6002A GX-10002A GX-6001A GX-10001A
+Models GF-1202A GF-2002A GF-3002A GF-4002A GF-6002A GF-10002A GF-6001A GF-10001A
+Capacity 1220 g 2200 g 3200 g 4200 g 6200 g 10200 g 6200 g 10200 g
+Readability 0.01 g 0.1 g
+0.02 g (10000 g)
+Repeatability (standard deviation) 0.01 g 0.01 g (5000 g) 0.1 g
+Minimum weight*i (typical) 14 g 100 g
+Linearity ±0.02 g ±0.03 g ±0.1 g
+Stabilization time Approx. 1 sec Approx. 1.5 sec Approx. 1 sec
+(when set to FAST under a good environment) Approx. 0.8 sec (50 g) Approx. 0.8 sec (50 g) Approx. 0.8 sec (500 g)
+Sensitivity drift ±2 ppm/°C (10 to 30 °C/50 to 86 °F, when automatic self calibration is OFF)
+Accuracy immediately after internal
+calibration (for the GX-A series)*iii ±0.10 g ±0.15 g ±0.15 g (5000 g) ±0.5 g (5000 g)
+Operating environment 5 to 40 °C (41 to 104 °F), 85%RH or less (no condensation)
+Display refresh rate 5 times/sec, 10 times/sec or 20 times/sec
+g (gram), oz (ounce), lb (pound), lb-oz (pound-ounce), ozt (troy ounce), ct (metric carat), mom (momme), dwt (pennyweight),
+Units of measure*ii
+gr (grain), pcs (counting mode), % (percent mode), SG (density mode), and a user-programmable unit
+Minimum unit mass 0.01 g 0.1 g
+Counting mode
+Number of samples 5, 10, 25, 50 or 100 pieces
+Minimum 100% reference mass 1.00 g 10.0 g
+Percent mode
+% readability 0.01%, 0.1% or 1% (depends on the reference mass stored)
+Communication interface RS-232C and USB
+500 g 500 g 500 g 500 g 500 g 500 g
+500 g
+500 g 1000 g 1000 g 1000 g 1000 g 1000 g 1000 g
+Applicable calibration weight value 1000 g
+1000 g 2000 g (1000 g interval) (1000 g interval) (1000 g interval) (1000 g interval) (1000 g interval)
+2000 g
+3000 g 4000 g 6000 g 10000 g 6000 g 10000 g
+Weighing pan size 165 × 165 mm
+External dimensions 212(W) × 317(D) × 93(H) mm
+Net weight Approx. 5 kg
+Power supply / consumption AC adapter / approx. 30 VA
+*i Pursuant to the United States Pharmacopeia (USP), Chapter 41
+*ii One additional unit from tael (Singapore/HK jewelry/Taiwan/China), tola or Newton can be added upon request.
+*iii Under stable environment (no rapid temperature/humidity change, vibration, draft, magnetism, static, etc). The mass of the internal weight may vary with age.
+Dimensions (mm/inches)
+GX-124AE / GX-224AE / GX-324AE
+GX-124A / GX-224A / GX-324A
+GF-124A / GF-224A / GF-324A
+358/14.09
+259/10.2 190.5/7.5
+87.8/322
+70.31/233
+65.3/5.09
+94.7/3.73 217/8.54 45/1.77
+224/8.82
+274/10.79
+259/10.2 190/7.48
+161/6.34 188/7.4 172/6.77
+55.01/862 71.8/5.702
+55.5/141
+10

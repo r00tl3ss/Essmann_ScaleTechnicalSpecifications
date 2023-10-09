@@ -1,0 +1,106 @@
+These are the technical specifications for a scale. Please create a detailed JSON file
+                                    to sort, label and group them. Don't simplify it: Quintix® – Technical Specifications
+Semi-micro balances
+Model Weighing Readability Repeatability, Stabilization Weighing Weighing Dimensions Weighing Calibration and
+capacity typical time, typical pan size chamber (W × D × H) system adjustment
+height*
+[g] [mg] [mg] [s] [mm] [mm] [mm] Internal External
+QUINTIX35-1x 30 0,01 0,03 ≤ 4,0 Ø 80 218 218 × 376 × 316 EMC isoCAL 
+QUINTIX65-1x 60 0,01 0,03 ≤ 4,0 Ø 80 218 218 × 376 × 316 EMC isoCAL 
+QUINTIX125D-1x 60 | 120 0.01 | 0.1 0.03 | 0.07 ≤ 4.0 | 1.5 Ø 80 218 218 × 376 × 316 EMC isoCAL 
+Analytical balances
+Model Weighing Readability Repeatability, Stabilization Weighing Weighing Dimensions Weighing Calibration and
+capacity typical time, typical pan size chamber (W × D × H) system adjustment
+height*
+[g] [mg] [mg] [s] [mm] [mm] [mm] Internal External
+QUINTIX64-1x 60 0.1 0.1 ≤ 1.5 Ø 90 209 218 × 359 × 319 EMC isoCAL 
+QUINTIX124-1x 120 0.1 0.1 ≤ 1.5 Ø 90 209 218 × 359 × 319 EMC isoCAL 
+QUINTIX224-1x 220 0.1 0.1 ≤ 1.5 Ø 90 209 218 × 359 × 319 EMC isoCAL 
+Milligram balances
+Model Weighing Readability Repeatability, Stabilization Weighing Weighing Dimensions Weighing Calibration and
+capacity typical time, typical pan size chamber (W × D × H) system adjustment
+height*
+[g] [mg] [mg] [s] [mm] [mm] [mm] Internal External
+QUINTIX213-1x 210 1 1 ≤ 1.0 Ø 120 209 218 × 359 × 319 EMC isoCAL 
+QUINTIX313-1x 310 1 1 ≤ 1.0 Ø 120 209 218 × 359 × 319 EMC isoCAL 
+QUINTIX513-1x 510 1 1 ≤ 1.0 Ø 120 209 218 × 359 × 319 EMC isoCAL 
+QUINTIX613-1x 610 1 1 ≤ 1.0 Ø 120 209 218 × 359 × 319 EMC isoCAL 
+20Precision balances
+Model Weighing Readability Repeatability, Stabilization Weighing Weighing Dimensions Weighing Calibration and
+capacity typical time, typical pan size chamber (W × D × H) system adjustment
+height*
+[g] [mg] [mg] [s] [mm] [mm] [mm] Internal External
+QUINTIX412-1x 410 10 10 ≤ 0.9 Ø 180 – 218 × 359 × 88 Strain isoCAL 
+gauge
+QUINTIX612-1x 610 10 10 ≤ 0.9 Ø 180 – 218 × 359 × 94 EMC isoCAL 
+QUINTIX612-1x 610 10 10 ≤ 0.9 Ø 180 – 218 × 359 × 88 Strain isoCAL 
+gauge
+QUINTIX1102-1x 1,100 10 10 ≤ 0.9 Ø 180 – 218 × 359 × 94 EMC isoCAL 
+QUINTIX1102-1x 1,100 10 10 ≤ 0.9 Ø 180 – 218 × 359 × 88 Strain isoCAL 
+gauge
+QUINTIX2102-1x 2,100 10 10 ≤ 0.9 Ø 180 – 218 × 359 × 94 EMC isoCAL 
+QUINTIX2102-1x 2,100 10 10 ≤ 0.9 Ø 180 – 218 × 359 × 88 Strain isoCAL 
+gauge
+QUINTIX3102-1x 3,100 10 10 ≤ 0.9 Ø 180 – 218 × 359 × 94 EMC isoCAL 
+QUINTIX5102-1x 5,100 10 10 ≤ 0.9 Ø 180 – 218 × 359 × 94 EMC isoCAL 
+QUINTIX6102-1x 6,100 10 10 ≤ 0.9 Ø 180 – 218 × 359 × 94 EMC isoCAL 
+QUINTIX2101-1x 2,100 100 100 ≤ 0.9 Ø 180 – 218 × 359 × 88 Strain isoCAL 
+gauge
+QUINTIX5101-1x 5,100 100 100 ≤ 0.9 Ø 180 – 218 × 359 × 88 Strain isoCAL 
+gauge
+QUINTIX6101-1x 6,100 100 100 ≤ 0.9 Ø 180 – 218 × 359 × 88 Strain isoCAL 
+gauge
+QUINTIX5100-1x 5,100 1,000 1,000 ≤ 0.9 Ø 180 – 218 × 359 × 88 Strain isoCAL 
+gauge
+QUINTIX6100-1x 6,100 1,000 1,000 ≤ 0.9 Ø 180 – 218 × 359 × 88 Strain isoCAL 
+gauge
+* upper edge of the weighing pan to the lower edge of the upper draft shield panel
+x = term for country-specific models
+21Secura® – Technical Specifications
+Micro balances
+Model Weighing Readability Repeatability, Stabilization Weighing Weighing Dimensions Weighing Calibration and
+capacity typical time, typical pan size chamber (W × D × H) system adjustment
+height*
+[g] [mg] [mg] [s] [mm] [mm] [mm] Internal External
+SECURA26-1x 21 0.002 0.004 ≤ 6.0 Ø 50 218 218 × 376 × 316 EMC isoCAL 
+Semi-micro balances
+Model Weighing Readability Repeatability, Stabilization Weighing Weighing Dimensions Weighing Calibration and
+capacity typical time, typical pan size chamber (W × D × H) system adjustment
+height*
+[g] [mg] [mg] [s] [mm] [mm] [mm] Internal External
+SECURA125-1x 120 0.01 0.03 ≤ 4.0 Ø 80 218 218 × 376 × 316 EMC isoCAL 
+SECURA225D-1x 120 | 220 0.01 | 0.1 0.03 | 0.07 ≤ 4.0 | 1.5 Ø 80 218 218 × 376 × 316 EMC isoCAL 
+Analytical balances
+Model Weighing Readability Repeatability, Stabilization Weighing Weighing Dimensions Weighing Calibration and
+capacity typical time, typical pan size chamber (W × D × H) system adjustment
+height*
+[g] [mg] [mg] [s] [mm] [mm] [mm] Internal External
+SECURA124-1x 120 0.1 0.1 ≤ 1.5 Ø 90 209 218 × 359 × 319 EMC isoCAL 
+SECURA224-1x 220 0.1 0.1 ≤ 1.5 Ø 90 209 218 × 359 × 319 EMC isoCAL 
+SECURA324-1x 320 0.1 0.1 ≤ 1.5 Ø 90 218 218 × 376 × 316 EMC isoCAL 
+Milligram balances
+Model Weighing Readability Repeatability, Stabilization Weighing Weighing Dimensions Weighing Calibration and
+capacity typical time, typical pan size chamber (W × D × H) system adjustment
+height*
+[g] [mg] [mg] [s] [mm] [mm] [mm] Internal External
+SECURA213-1x 210 1 1 ≤ 1.0 Ø 120 209 218 × 359 × 319 EMC isoCAL 
+SECURA313-1x 310 1 1 ≤ 1.0 Ø 120 209 218 × 359 × 319 EMC isoCAL 
+SECURA513-1x 510 1 1 ≤ 1.0 Ø 120 209 218 × 359 × 319 EMC isoCAL 
+SECURA613-1x 610 1 1 ≤ 1.0 Ø 120 209 218 × 359 × 319 EMC isoCAL 
+SECURA1103-1x 1,100 1 1 ≤ 1.0 Ø 120 209 218 × 359 × 319 EMC isoCAL 
+22Precision balances
+Model Weighing Readability Repeatability, Stabilization Weighing Weighing Dimensions Weighing Calibration and
+capacity typical time, typical pan size chamber (W × D × H) system adjustment
+height*
+[g] [mg] [mg] [s] [mm] [mm] [mm] Internal External
+SECURA612-1x 610 10 10 ≤ 0.9 Ø 180 - 218 × 359 × 94 EMC isoCAL 
+SECURA1102-1x 1,100 10 10 ≤ 0.9 Ø 180 - 218 × 359 × 94 EMC isoCAL 
+SECURA2102-1x 2,100 10 10 ≤ 0.9 Ø 180 - 218 × 359 × 94 EMC isoCAL 
+SECURA3102-1x 3,100 10 10 ≤ 0.9 Ø 180 - 218 × 359 × 94 EMC isoCAL 
+SECURA5102-1x 5,100 10 10 ≤ 0.9 Ø 180 - 218 × 359 × 94 EMC isoCAL 
+SECURA6102-1x 6,100 10 10 ≤ 0.9 Ø 180 - 218 × 359 × 94 EMC isoCAL 
+SECURA3101-1x 3,100 100 50 ≤ 0.9 Ø 180 - 218 × 359 × 94 EMC isoCAL 
+SECURA6101-1x 6,100 100 50 ≤ 0.9 Ø 180 - 218 × 359 × 94 EMC isoCAL 
+* upper edge of the weighing pan to the lower edge of the upper draft shield panel
+x = term for country-specific models
+23
