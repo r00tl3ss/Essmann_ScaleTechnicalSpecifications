@@ -13,6 +13,23 @@ def cut_last_path_part(path):
     return filename
 
 
+def eliminate_invalid_utf8_characters(input_string):
+    # Initialize an empty result string
+    result = ""
+
+    # Iterate through each character in the input string
+    for char in input_string:
+        try:
+            # Try to decode the character as UTF-8
+            char.encode('utf-8').decode('utf-8')
+            # If successful, it's a valid UTF-8 character, so add it to the result
+            result += char
+        except UnicodeDecodeError:
+            # If decoding raises an error, it's not a valid UTF-8 character, so skip it
+            pass
+
+    return result
+
 def cut_last_path_part_and_extension(path):
     # Split the path into directory and filename
     directory, filename = os.path.split(path)
@@ -32,7 +49,8 @@ def create_and_write_to_file(subdirectory, filename, content):
     file_path = os.path.join(subdirectory, filename)
 
     # Open the file in write mode ('w') and add content
-    with open(file_path, 'w') as file:
+    with open(file_path, 'w', encoding='utf-16-le') as file:
+
         file.write(content)
 
 def run():

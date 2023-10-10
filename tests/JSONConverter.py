@@ -34,7 +34,7 @@ class JSONConverter:
 
                 if os.path.isfile(file_path):
 
-                    with open(file_path, 'r') as file:
+                    with open(file_path, 'r', encoding='utf-16-le') as file:
                         prompt = file.read()
                         response = g4f.ChatCompletion.create(
                             model=g4f.models.gpt_35_long,
