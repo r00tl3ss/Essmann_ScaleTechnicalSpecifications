@@ -1,10 +1,14 @@
 import re
-
 import json
-from tests import technicalsheet
+from Prototype import technicalsheet
+from Prototype import websiteReader
+from Prototype.Rhewa import CSVConverter
 
 def main():
-    technicalsheet.run()
+    #technicalsheet.run()
+    #websiteReader.generate_data()
+    CSVConverter.runAdvancedConversion()
+
 
 if __name__ == '__main__':
     main()
