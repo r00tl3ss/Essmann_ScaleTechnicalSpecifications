@@ -9,7 +9,7 @@ import time
 from Prototype.Rhewa import CSVConverter as csvcon
 from Prototype import webscraper, pdfreader, DataSorter
 
-openai.api_key = "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"
+openai.api_key = ""
 
 class RhewaConverter:
     file_name = "test_data_rhewaconverter.json"
@@ -50,15 +50,22 @@ class RhewaConverter:
                     wert4: wert,
                     wert5: wert
                     }"""
-                    completion = openai.ChatCompletion.create(
-                        model="gpt-3.5-turbo",
-                        messages=[
+                    response = ""
+                    try:
+                        completion = openai.ChatCompletion.create(
+                            model="gpt-3.5-turbo",
+                            messages=[
                             {"role": "system", "content": f"Du bist JSON-Experte und gibts als Antwort nur JSON Daten in folgendem Format wieder: {sample_format} das sind die Werte die du ausfüllen musst: {attribute_string}"},
                             {"role": "user", "content": f"Folgende Daten hast du über eine Waage gegeben: {pdfDataString}, {table_content}, {websiteContent}"}
-                        ]
-                    )
-                    response = completion.choices[0].message.content
-                    print(f'response: {response}')
+                            ]
+                        )
+                        response = completion.choices[0].message.content
+                    except openai.error.Timeout as e:
+                        print("Timeout")
+                    finally:
+                        print(f'response: {response}')
+
+                    time.sleep(1)
 
                     json_response = csvcon.extract_json(response)
 
