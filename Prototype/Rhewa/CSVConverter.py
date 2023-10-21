@@ -253,7 +253,7 @@ def runConversion():
 
 def runAdvancedConversion():
     data = load_JSON_file("items_data.json", 'r')
-    file_name = "items_data.json"
+    file_name = "items_data Kopie.json"
     for item in data:
         # Access individual properties of each dictionary
         index = 0
